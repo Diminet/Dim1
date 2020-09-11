@@ -6,7 +6,7 @@ public class Ex2 {
         int b;
         System.out.print("Intr 1 num: ");
         a = input.nextInt();
-        System.out.print("Intr 2 num: ");
+        System.out.print("Intr 1 num: ");
         b = input.nextInt();
         if (a == b)
             System.out.printf("%d == %d Aceste numere sunt egale %n", a, b);
