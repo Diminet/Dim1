@@ -1,20 +1,14 @@
 import java.util.Scanner;
 public class Ex2 {
-    public static void main(String[] args) {
+    public static void main(String[] arg) {
         Scanner input = new Scanner(System.in);
-        int a;
-        int b;
-        System.out.print("Intr 1 num: ");
-        a = input.nextInt();
-        System.out.print("Intr 1 num: ");
-        b = input.nextInt();
-        if (a == b)
-            System.out.printf("%d == %d Aceste numere sunt egale %n", a, b);
-        if (a < b)
-            System.out.printf("%d  este mai mare%n",  b);
-        if (a > b)
-            System.out.printf("%d este mai mare%n", a);
-
+        double km = Double.parseDouble(arg[0]);
+        System.out.println("kilo meters travelled is: "+km);
+        double m=km/1.609344;
+        double g = Double.parseDouble(arg[1]);
+        System.out.println("Gallons used : "+g);
+        double mpg=m/g;
+        System.out.print("Miles per gallons = "+mpg);
 
     }
 }
