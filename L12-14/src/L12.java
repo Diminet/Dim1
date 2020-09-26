@@ -26,20 +26,15 @@ public class L12
         int uniq = 0;
         for( i=1; i<arr.length; i++){
             if(arr[i] > 0){
-
                 for(int j=i-1; j>=0; j--){
                     if(arr[i] == arr[j]){
                         uniq = 0;
-                        break;
-                    }else{
-                        uniq = arr[i];
-                    }
+                        break; }
+                    else    { uniq = arr[i];   }
                 }
                 if(uniq > 0)
-                    System.out.print(uniq + " ");
-            }else{
-                continue;
-            }
+                    System.out.print(uniq + " ");    }
+                    else    { continue; }
         }
         System.out.println();
     }
