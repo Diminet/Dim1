@@ -5,7 +5,7 @@ public class Lab14
         int[] numbers = { 1, 2, 3, 4, 4, 2, 1 };
         System.out.println("9*9= " + suma(9, 9));
         System.out.println("1*2*3= " + suma(1, 2, 3));
-        System.out.println("Suma totala:" + suma(numbers));
+        System.out.println("Product  of series:" + suma(numbers));
     }
     public static int suma(int... ar)
     {
