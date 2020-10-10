@@ -1,6 +1,6 @@
 public class SavingsAccount
 {
-    private static double annualInterestRate;
+    private static double InterestRate;
 
     private double savingsBalance = 0.0;
     public SavingsAccount( double savings) {
@@ -11,13 +11,13 @@ public class SavingsAccount
 
     public void calculateMonthlyInterest() {
 
-        savingsBalance = savingsBalance + ((savingsBalance * annualInterestRate) / 12);
+        savingsBalance = savingsBalance + ((savingsBalance * InterestRate) / 12);
 
     }
 
     public static void modifyInterestRate(double rate) {
 
-        annualInterestRate = rate;
+        InterestRate = rate;
 
     }
     public String toString() {
